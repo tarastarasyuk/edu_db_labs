@@ -10,7 +10,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 **Виконали:** 
 
 <!-- *студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]** -->
-*студент 2-го курсу, групи ІО-03* **Роман БОНДАРЕНКО [Telegram](https://t.me/itz_roma) [GitHub](https://github.com/itzRoma)**
+*студент 2-го курсу, групи ІО-03* **Роман БОНДАРЕНКО [Telegram](https://t.me/itz_roma) [GitHub](https://github.com/itz-roma)**
 
 *студентка 2-го курсу, групи ІО-03* **Вікторія ГЕРАСИМЕНКО [Telegram](https://t.me/irotciv) [GitHub](https://github.com/irotciv)**
 
