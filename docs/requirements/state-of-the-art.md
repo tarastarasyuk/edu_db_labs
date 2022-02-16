@@ -4,7 +4,7 @@
 
 *[Вступ повинен містити короткий огляд всього документу.]*
  
- ***vhgdvdc dhcbjhbcds cdsbcdshgc b cbhd cgds cg d***
+ ***уа***
 
  gdgdgf:
  - jdsjsd
