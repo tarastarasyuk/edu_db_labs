@@ -27,6 +27,10 @@
 - **Часова шкала (Timeline)** – це графічне послідовне відображення завдань проекту.
 - **Вертикальний зріз (Vertical Slice)** – показник ефективності, який демонструє прогрес у всіх компонентах проекту або областях ефективності в певний момент часу.
 
+### Посилання на джерела:
+
+- [The Complete Glossary of Project Management Terminology - Kate Eby, 2017](https://www.smartsheet.com/complete-glossary-project-management-terminology)
+- [Project Management - Wikipedia](https://en.wikipedia.org/wiki/Project_management)
 
 
 ## Підходи та способи вирішення завдання
