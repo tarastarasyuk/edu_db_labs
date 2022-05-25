@@ -1,85 +1,15 @@
 # Модель прецедентів
 
-В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
+Цей документ містить в собі опис основних сценаріїв роботи системи.
 
-*Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
+Вбудовування зображень діаграм здійснюється з використанням сервісу [UML Editor](https://jace-dev.herokuapp.com/design/uml-editor#/).
 
+В markdown-файлі використовується опис діаграми.
 
-
-Вбудовування зображень діаграм здійснюється з використанням сервісу [plantuml.com](https://plantuml.com/). 
-
-В markdown-файлі використовується опис діаграми
-
-```md
-
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
->
-
-@startuml
-
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
-
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+## Діаграми прецедентів
 
 
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
-
-@enduml
-
-**Діаграма прецедентів**
-
-</center>
-```
-
-яка буде відображена наступним чином
+**Загальна схема використання**
 
 <center style="
     border-radius:4px;
@@ -90,60 +20,163 @@
 
 @startuml
 
-    right header
-        <font size=24 color=black>Package: <b>UCD_3.0
-    end header
+  skinparam actorStyle awesome
+  actor Користувач #f7f2f7
+  usecase "Зареєструватися" as Reg #b5d1ff
+  usecase "Авторизуватися" as Auth #b5d1ff
+  
+  Користувач -u-> Auth
+  Користувач -u-> Reg
 
-    title
-        <font size=18 color=black>UC_8. Редагувати конфігурацію порталу
-        <font size=16 color=black>Діаграма прецедентів
-    end title
+  
+  actor Менеджер #ffebfd
+  usecase "Редагувати проекти" as EditPrj #b5ffc0
+  usecase "Редагувати плани проекту" as EditPlans #b5ffc0
 
+  Менеджер --> EditPrj
+  Менеджер --> EditPlans
+  
+  
+  actor Тімлід #ffebfd
+  usecase "Редагувати артефакти" as EditArt #b5ffc0
+  usecase "Редагувати завдання" as EditTasks #b5ffc0
 
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "<b>UC_1</b>\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1</b>\nЗастосувати фільтр" as UC_1.1
-    usecase "<b>UC_1.2</b>\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "<b>UC_1.2.1</b>\nДати оцінку звіту" as UC_1.2.1  
-    usecase "<b>UC_1.2.2</b>\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "<b>UC_4</b>\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "<b>UC_1.1.1</b>\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "<b>UC_1.1.2</b>\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "<b>UC_1.1.3</b>\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -> UC_1
-    UC_1.1 .u.> UC_1 :extends
-    UC_1.2 .u.> UC_1 :extends
-    UC_4 .d.> UC_1.2 :extends
-    UC_1.2 .> UC_1.2 :extends
-    UC_1.2.1 .u.> UC_1.2 :extends
-    UC_1.2.2 .u.> UC_1.2 :extends
-    UC_1 ..> UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|> UC_1.1
-    UC_1.1.2 -u-|> UC_1.1
-    UC_1.1.3 -u-|> UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
+  Тімлід --> EditArt
+  Тімлід --> EditTasks
+  
+  
+  actor Розробник #ffebfd
+  usecase "Переглядати завдання" as ViewTasks #b5ffc0
 
+  Розробник --> ViewTasks
+  
+  
+  Менеджер -u-|> Користувач
+  Тімлід -u-|> Користувач
+  Розробник -u-|> Користувач
+  
 @enduml
-
-**Діаграма прецедентів**
 
 </center>
 
+
+**Схема використання для менеджера проекту**
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+  skinparam actorStyle awesome
+  actor Менеджер #ffebfd
+  usecase "Редагувати проекти" as EditPrj #b5ffc0
+  usecase "Редагувати плани проекту" as EditPlans #b5ffc0
+
+
+  Менеджер -u-> EditPrj
+  
+  usecase "Створити проект" as CreatePrj #b5d1ff
+  usecase "Змінити властивості проекту" as EditPrjProp #b5d1ff
+  usecase "Видалити проект" as DeletePrj #b5d1ff
+  
+  CreatePrj .d.>"<<extends>>" EditPrj
+  EditPrjProp "<<extends>>" .d.> EditPrj
+  DeletePrj .d.>"<<extends>>" EditPrj
+
+
+  Менеджер --> EditPlans
+  
+  usecase "Створити план" as CreatePlan #b5d1ff
+  usecase "Змінити план" as EditPlan #b5d1ff
+  usecase "Видалити план" as DeletePlan #b5d1ff
+  usecase "Призначити план тімліду" as AssignPlan #b5d1ff
+  
+  CreatePlan .u.>"<<extends>>" EditPlans
+  EditPlan "<<extends>>".u.> EditPlans
+  DeletePlan "<<extends>>".u.> EditPlans
+  AssignPlan .u.>"<<extends>>" EditPlans
+  
+  
+@enduml
+
+</center>
+
+
+**Схема використання для тімліда**
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+  skinparam actorStyle awesome
+  actor Тімлід #ffebfd
+  usecase "Редагувати завдання" as EditTasks #b5ffc0
+  usecase "Редагувати артефакти" as EditArt #b5ffc0
+
+
+  Тімлід -u-> EditTasks
+  
+  usecase "Створити завдання" as CreateTask #b5d1ff
+  usecase "Змінити завдання" as EditTask #b5d1ff
+  usecase "Видалити завдання" as DeleteTask #b5d1ff
+  usecase "Призначити завдання" as AssignTask #b5d1ff
+  
+  CreateTask "<<extends>>".d.> EditTasks
+  EditTask "<<extends>>".d.> EditTasks
+  DeleteTask "<<extends>>".d.> EditTasks
+  AssignTask .d.>"<<extends>>" EditTasks
+
+
+  Тімлід --> EditArt
+  
+  usecase "Створити артефакт" as CreatePlan #b5d1ff
+  usecase "Змінити артефакт" as EditPlan #b5d1ff
+  usecase "Видалити артефакт" as DeletePlan #b5d1ff
+  usecase "Додати артефакт до завдання" as AssignPlan #b5d1ff
+  
+  CreatePlan .u.>"<<extends>>" EditArt
+  EditPlan "<<extends>>".u.> EditArt
+  DeletePlan "<<extends>>".u.> EditArt
+  AssignPlan "<<extends>>".u.> EditArt
+
+@enduml
+
+</center>
+
+
+**Схема використання для розробника**
+
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+@startuml
+
+  skinparam actorStyle awesome
+  actor Розробник #ffebfd
+  usecase "Переглядати завдання" as ViewTasks #b5ffc0
+
+  Розробник -u-> ViewTasks
+  
+  usecase "Переглянути вміст завдання" as ViewDevTask #b5d1ff
+  usecase "Надіслати завдання на перевірку" as SendReviewTask #b5d1ff
+  
+  ViewDevTask "<<extends>>"..> ViewTasks
+  SendReviewTask "<<extends>>"..> ViewTasks
+  
+  
+@enduml
+
+</center>
