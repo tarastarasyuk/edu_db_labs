@@ -201,7 +201,7 @@
 6. Система створює новий обліковий запис
 7. Система надає дані облікового запису користувачеві
 
-![](scenarios_imgs/auth01.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/auth01.png)
 
 
 
@@ -236,7 +236,7 @@
 6. Система перевіряє наявність облікового запису користувача (можлива AUTH_EX_01.02)
 7. Система надає доступ користувачеві до облікового запису
 
-![](scenarios_imgs/auth02.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/auth02.png)
 
 
 
@@ -267,7 +267,7 @@
 6. Система створює новий проект
 7. Система повідомляє про успішне створення
 
-![](scenarios_imgs/pm01.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/pm01.png)
 
 
 
@@ -301,7 +301,7 @@
 7. Система записує зміни
 8. Система повідомляє про успішне редагування
 
-![](scenarios_imgs/pm02.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/pm02.png)
 
 
 
@@ -335,7 +335,7 @@
 7. Система додає розробників
 8. Система повідомляє про успішне додання
 
-![](scenarios_imgs/pm03.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/pm03.png)
 
 
 
@@ -365,7 +365,7 @@
 5. Система призначає обраного розробника тімлідом
 6. Система повідомляє про успішне призначення
 
-![](scenarios_imgs/pm04.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/pm04.png)
 
 
 
@@ -392,7 +392,7 @@
 3. Система видаляє проект
 4. Система повідомляє про успішне видалення
 
-![](scenarios_imgs/pm05.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/pm05.png)
 
 
 
@@ -426,7 +426,7 @@
 7. Система додає новий стан у проект
 8. Система повідомляє про успішне додання
 
-![](scenarios_imgs/lead01.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead01.png)
 
 
 
@@ -462,7 +462,7 @@
 8. Система записує зміни
 9. Система повідомляє про успішне редагування
 
-![](scenarios_imgs/lead02.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead02.png)
 
 
 
@@ -492,7 +492,7 @@
 4. Система видаляє стан
 5. Система повідомляє про успішне видалення
 
-![](scenarios_imgs/lead03.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead03.png)
 
 
 
@@ -525,7 +525,7 @@
 7. Система створює завдання
 8. Система повідомляє про успішне створення
 
-![](scenarios_imgs/lead04.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead04.png)
 
 
 
@@ -560,7 +560,7 @@
 8. Система записує зміни
 9. Система повідомляє про успішне редагування
 
-![](scenarios_imgs/lead05.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead05.png)
 
 
 
@@ -598,7 +598,7 @@
 9. Система призначає дедлайн
 10. Система повідомляє про успішне призначення
 
-![](scenarios_imgs/lead06.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead06.png)
 
 
 
@@ -634,7 +634,7 @@
 7. Система призначає обраного розробника до завдання
 8. Система повідомляє про успішне призначення
 
-![](scenarios_imgs/lead07.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead07.png)
 
 
 
@@ -668,7 +668,7 @@
 7. Система переміщує завдання в обраний стан
 8. Система повідомляє про успішне переміщення
 
-![](scenarios_imgs/lead08.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead08.png)
 
 
 
@@ -700,7 +700,7 @@
 5. Система видаляє завдання
 6. Система повідомляє про успішне видалення
 
-![](scenarios_imgs/lead09.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/lead09.png)
 
 
 
@@ -734,7 +734,7 @@
 7. Користувач відправляє форму
 8. Система додає прикріплення до завдання
 
-![](scenarios_imgs/dev01.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/dev01.png)
 
 
 
@@ -771,7 +771,7 @@
 9. Система записує зміни
 10. Система повідомляє про успішне редагування
 
-![](scenarios_imgs/dev02.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/dev02.png)
 
 
 
@@ -805,7 +805,7 @@
 6. Система видаляє прикріплення
 7. Система повідомляє про успішне видалення
 
-![](scenarios_imgs/dev03.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/dev03.png)
 
 
 
@@ -839,4 +839,4 @@
 7. Система переміщує завдання в обраний стан
 8. Система повідомляє про успішне переміщення
 
-![](scenarios_imgs/dev04.png)
+![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/use%20cases/scenarios_imgs/dev04.png)
