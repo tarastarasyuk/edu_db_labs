@@ -92,6 +92,6 @@
 
 ![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/test/postman-screenshots/25.png)
 
-## Видалення проекту:
+## Видалення проекту
 
 ![](https://github.com//tarastarasyuk/pm-system/raw/master/docs/test/postman-screenshots/26.png)
